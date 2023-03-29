@@ -1,5 +1,5 @@
 # LearnBlazor.Server
-Source code for my article Let's Learn Blazor: Background Service Communications with Blazor via SignalR  
+Source code for my article Let's Learn Blazor: Rendering Html  
 
 https://medium.com/it-dead-inside/lets-learn-blazor-background-service-communication-with-blazor-via-signalr-84abe2660fd6
 
