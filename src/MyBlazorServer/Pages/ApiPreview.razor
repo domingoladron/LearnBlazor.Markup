@@ -1,0 +1,24 @@
+@page "/api-preview"
+
+<h1>Markup Rendered from API</h1>
+
+<h2>Here's the raw html which is coming back from the API</h2>
+From URL <a href="/preview/raw" target="_blank"><code>/preview/raw</code></a>
+<iframe src="/preview/raw" style="width:100%; height:40%"></iframe>
+
+<div style="padding-top: 10%">
+<h2>Here's the html as a rendered web page coming back from the API</h2>
+    From URL <a href="/preview" target="_blank"><code>/preview</code></a>
+<iframe src="/preview" style="width:100%; height:40%"></iframe>
+</div>
+
+@code {
+    public string ChangingText = "Hello from the <em>HTML Markup</em>.  This is in <b>bold</b>. <custom-tag>";
+
+    [Inject] NavigationManager NavigationManager { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+
+        await base.OnInitializedAsync();
+    }
+}

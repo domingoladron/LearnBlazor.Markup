@@ -1,0 +1,20 @@
+@page "/custom-tags"
+
+<h1>Markup Rendered By MarkupString with Custom Tags</h1>
+
+Here's some simple HTML with custom tags rendered as a MarkupString:
+<p>Rendering this string <code>@(ChangingText)</code></p>
+
+<p style="font-weight: bold; color: darkblue">@((MarkupString)ChangingText)</p>
+
+
+@code {
+    public string ChangingText = "Hello from the <em>HTML Markup</em>.  This is in <b>bold</b>. <custom-tag>";
+
+    [Inject] NavigationManager NavigationManager { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+
+        await base.OnInitializedAsync();
+    }
+}
