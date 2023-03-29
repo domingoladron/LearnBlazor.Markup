@@ -1,4 +1,4 @@
-# LearnBlazor.Server
+# LearnBlazor.Markup
 Source code for my article Let's Learn Blazor: Rendering Html  
 
 https://domingoladron.medium.com/lets-learn-blazor-rendering-html-bcac83214db0
